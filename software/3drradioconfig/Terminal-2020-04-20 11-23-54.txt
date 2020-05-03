@@ -1,0 +1,53 @@
+
+
+
+help
+help
+
+ERROR:  Command not recognized
+ROVER V1.0: > help
+help
+help: > 
+
+version                   --  Display firmware version 
+blinkled                  --  Blinks blue led          
+ultrasonic_read           --  Read sensor range        
+temp_read                 --  read temperature of processor
+light_read                --  read ambient light level 
+color_read                --  read RGB light levels    
+auto_nav                  --  rover navigates autonomously
+clear                     --  clears terminal          
+help                      --  Help menu.               
+
+ROVER V1.0: > version
+version
+version: > Version 1.0, Apr 20 2020, 09:17:01.
+ROVER V1.0: > clear
+clear
+clear: > [2J[0;0HROVER V1.0: > blinkled
+blinkled
+blinkled: > ROVER V1.0: > help
+
+
+
+help
+
+ERROR:  Command not recognized
+ROVER V1.0: > version
+version
+version: > Version 1.0, Apr 20 2020, 09:17:01.
+ROVER V1.0: > help
+help
+help: > 
+
+version                   --  Display firmware version 
+blinkled                  --  Blinks blue led          
+ultrasonic_read           --  Read sensor range        
+temp_read                 --  read tempe light levels    
+auto_nav                  --  rover navigates autonomously
+clear                     --  clears terminal          
+help                      --  Help menu.               
+
+ROVER V1.0: > clear
+clear
+clear: > [2J[0;0HROVER V1.0: > 

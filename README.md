@@ -1,2 +1,2 @@
-# Rover_Robot
-ESDSpring2020_Final_Project
+# Rover-Robot
+ repository for software, hardware and reference documents related to rover robot project

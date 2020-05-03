@@ -1,0 +1,19 @@
+//
+//Author : Sundar Krishnakumar
+//Code re-use : http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSPBSL_Scripter/latest/index_FDS.html
+//              script_P4xx_uart.txt
+//
+LOG
+MODE P4xx UART 9600 COM6 
+RX_PASSWORD_32 .\pass256_wrong.txt
+RX_PASSWORD_32 .\pass256_default.txt
+MASS_ERASE
+//RX_DATA_BLOCK_32 Blink_LED.txt
+RX_DATA_BLOCK_32 .\Final_Project_with_fota.txt
+//RX_DATA_BLOCK_32 .\Final_Project_IMU.hex
+//RX_DATA_BLOCK_32 .\Final_project_fota.hex
+
+TX_BSL_VERSION_32
+TX_DATA_BLOCK_32 0x0000 0x4000 .\ReadBlock_MSP432P401R.txt
+//TX_DATA_BLOCK_32 0x0000 0x4000 .\ReadBlock_MSP432P401R.hex
+REBOOT_RESET

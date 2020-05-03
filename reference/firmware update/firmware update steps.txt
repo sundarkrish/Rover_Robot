@@ -1,0 +1,58 @@
+Erase the entire main flash memory and information memory and flash fresh copy of BSL.
+
+Now build(enable hex utility:output TI txt format) and 
+flash the code which has sw invocation procedure.
+NOTE : If trying in your own code put the SW invocation code inside main file at the beginning.
+       Should be the first code to execute in main() after power cycle/reset.(Working method)
+       I think doing other tasks and then doing SW invocation changes the BSL ram space.(s 0x2000:0000 and 0x2000:07FF)
+       Keep the ti txt file in the same folder where the script is.
+       You will find a wrong password command in script.
+       When entered a wrong password.It does a memory erase.Only main flash mem.Does not erase BSL.
+
+Now install BSL-Scripter and write the script
+(see samples.Only change COM and binary image ti txt filename and remove PARITY option).
+NOTE : Select the correct script example for the device MSP432P401R(P4xx) UART method
+       Enter the path in env variable of BSL-Scripter.exe after installing
+       Use only ti txt output format.Intel hex does not work in some cases.
+
+
+Run the application.In the console enter "fota_begin" and press ENTER.
+
+Now keep the BSL-Scripter ready to operate.
+NOTE : Open cmd.Go to folder where script is.
+	
+
+Now reset the board.
+NOTE : Power cycling is the best method.(Chosen)
+       Doing a reset with help of CCS is a good alternative.
+       Using RESET button does not always work.
+       Doing a RESET inside code never works.
+
+I think the reason is because the prev application has tampered the BSL RAM space.
+That is why a reset from inside code does not work.So performing a hardware reset is better.
+This way proper boot sequence happens : Bootcode->Application code(user code) or BSL code.
+
+
+
+
+(Now BSL invocation happens)
+
+Within 10s , in the previously opened cmd, type BSL-Scripter.exe 
+
+It prompts for file name.
+NOTE : Since the script is in the pwd enter .\script.txt or simply script.txt
+       When not done within 10s you will get [ERROR_MESSAGE]Initialization of P4xx BSL failed! 
+
+After firmware update complete.Compare the flash memory(using uniflash) with 
+the generated ReadBlock_MSP432P401R.txt file (Both must match)
+
+Need not reset.The script does a reset at the end.The new code starts automatically.
+
+
+IMP NOTE: If you decide to cancel the firmware update , but 
+you have already give "fota_begin" command(which means you are in the firmware udate mode)
+Simply press RESET button on the board or power cycle the board "TWICE" to enter application mode.
+First RESET ->Mode enters to firmware update mode.
+Second RESET ->The current application in the flash starts running
+(check by entereing help in serial terminal.Rover console should appear)
+

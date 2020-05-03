@@ -1,0 +1,62 @@
+ABCDEFGHIJKLMNOPQRSTUVWL/R RSSI: 155/146  L/R noise: 29/41 pkts: 38  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABCDEFGHIJKLMNOPQRSTUVL/R RSSI: 143/151  L/R noise: 36/42 pkts: 76  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABCDEFGHIJKLMNOPQRSL/R RSSI: 150/149  L/R noise: 29/37 pkts: 71  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=32 dco=0ABCDEFGHIJL/R RSSI: 152/150  L/R noise: 35/41 pkts: 61  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABCDEFGL/R RSSI: 150/150  L/R noise: 28/42 pkts: 53  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABCDEFGHIJKLML/R RSSI: 153/150  L/R noise: 31/42 pkts: 66  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABCL/R RSSI: 147/150  L/R noise: 49/39 pkts: 60  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABCDEFGL/R RSSI: 151/150  L/R noise: 31/38 pkts: 72  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABCDEL/R RSSI: 151/149  L/R noise: 30/41 pkts: 48  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABL/R RSSI: 152/149  L/R noise: 33/41 pkts: 61  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABCDEFGHIJKLMNOPQRSTL/R RSSI: 151/153  L/R noise: 30/43 pkts: 64  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABCDEFGHIJKLMNOPQRSTUVWXYL/R RSSI: 150/153  L/R noise: 39/43 pkts: 72  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABCDEFGHIJKLMNOPQL/R RSSI: 149/149  L/R noise: 31/41 pkts: 52  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0ABCDEFGHIJKLMNOPQRSTL/R RSSI: 149/149  L/R noise: 39/41 pkts: 49  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0UVWXYZ
+ABCDEFGHIJXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNL/R RSSI: 151/149  L/R noise: 38/43 pkts: 73  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+OPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFL/R RSSI: 149/149  L/R noise: 41/42 pkts: 78  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+GHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+JKLMNOPQRL/R RSSI: 150/149  L/R noise: 33/42 pkts: 50  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+STUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLL/R RSSI: 150/150  L/R noise: 30/40 pkts: 52  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+MNOPQRSTUVWXYZ
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLL/R RSSI: 151/150  L/R noise: 33/40 pkts: 56  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+MNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFL/R RSSI: 151/151  L/R noise: 30/41 pkts: 50  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+GHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQ
+ABCDEFGHIJKLMNOPQL/R RSSI: 151/151  L/R noise: 29/41 pkts: 51  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+RSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABABCDEFGHL/R RSSI: 151/149  L/R noise: 28/40 pkts: 67  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+IJKLMNOPQYABCABCDEFGHIJKLMNOPQRSTADQABCDEFGHIJKLMNOWXYZL/R RSSI: 151/149  L/R noise: 33/47 pkts: 67  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=34 dco=0
+ABCDEFGHIJKLMNOPQRSJKLMNOPQRSTUVWXYZ
+ABRABCDEFGL/R RSSI: 150/153  L/R noise: 30/40 pkts: 73  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=34 dco=0
+HIJKTUABCDEFZABCDEFGHIKLMNOP
+L/R RSSI: 151/149  L/R noise: 27/41 pkts: 5  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGL/R RSSI: 152/149  L/R noise: 33/41 pkts: 27  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+IJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEL/R RSSI: 151/152  L/R noise: 38/41 pkts: 73  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWL/R RSSI: 152/152  L/R noise: 31/41 pkts: 42  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+XYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTL/R RSSI: 150/151  L/R noise: 34/42 pkts: 69  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+UVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRL/R RSSI: 151/150  L/R noise: 34/43 pkts: 67  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=34 dco=0
+TUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOL/R RSSI: 149/147  L/R noise: 32/43 pkts: 59  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=34 dco=0
+PQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLL/R RSSI: 158/147  L/R noise: 40/43 pkts: 58  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=33 dco=0
+MNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJL/R RSSI: 159/157  L/R noise: 29/37 pkts: 64  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=34 dco=0
+LMNOPFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXL/R RSSI: 138/159  L/R noise: 30/43 pkts: 53  txe=0 rxe=1 stx=0 srx=0 ecc=0/0 temp=34 dco=0
+YZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+
+
+ABCDEFGHIJKL

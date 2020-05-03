@@ -1,0 +1,84 @@
+To erase main flash memory and information memory and isntall fresh BSL:::
+(Fatmawati answer)
+- download the package under:
+- import the project in CCS (should work with version 6.1.3 above). you can copy the project into workspace or simply import it.
+- In BSL432_Peripheral_Interface_eUSCI_UART_SPI_I2C_IRQ.c change EUSCI_A_UART_EVEN_PARITY to EUSCI_A_UART_NO_PARITY
+- In BSL432_Peripheral_Interface_eUSCI_UART_SPI_I2C_IRQ.c :
+
+In void BSL432_PI_UARTdetect()
+Remove everything and keep only the following lines: 
+
+    BSL432_PI_initUART(BSL432_UARTBaudRates115200);
+    BSL432_PI_sendByteUART(BSL432_ACK);
+
+- in CCS, build the project in Release mode
+- after it is successfully built, but before programming the device, go to Project Properties
+- on the list on the left side choose Debug
+- Then on the next column on the right, there is MSP432 settings
+- on the next column on the right, choose erase method to be Erase main and information memory, also check the checkbox of Allow BSL information memory
+- then you can start the program the BSL.
+- close / terminate the debug session, then try to communicate with BSL again
+
+Read : https://e2e.ti.com/support/microcontrollers/msp430/f/166/p/594448/2192689#2192689
+
+How to generate output ti txt file(Select ti txt file from output format options)
+1. http://e2e.ti.com/support/tools/ccs/f/81/t/723312?CCS-How-to-create-hex-file-after-build-
+
+Sample codes and BSL-Scripter scripts:::
+1. https://e2e.ti.com/support/microcontrollers/msp430/f/166/p/684761/2551311
+
+To perform HW or SW update VISHNU K answer:::
+1. https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/763633?Linux-MSP432P401R-programming-MSP432-using-BSL-UART
+NOTE: Within 10s of the BSL sw invocation we should run the script.Else BSL will go to sleep mode.
+      And will get Initialization error.
+
+
+BSL_Scripter commands:::
+1. http://www.ti.com/lit/ug/slau655g/slau655g.pdf
+NOTE: Use sample codes and modify.They come with BSL-Scripter package.
+       Should add path of the .exe file in env variables to use for cmd.
+
+
+Install fresh BSL:::
+1. http://www.ti.com/lit/ug/slau622i/slau622i.pdf
+
+
+Only works for fresh installation of BSL problem:::
+1. https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/684761
+
+
+BSL code:::
+1. http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSPBSL_CustomBSL432/latest/index_FDS.html
+
+
+Programmin using uniflash:::
+1. http://www.ti.com/lit/ug/slau799b/slau799b.pdf
+
+BSL memory space:::
+1. https://books.google.com/books?id=TDENDgAAQBAJ&pg=PA311&lpg=PA311&dq=flash+memory+region+ti+bsl+sector&source=bl&ots=vcT0SoAnlM&sig=ACfU3U1G6ODS8Vqla9DFO-LJHWGWahDXOw&hl=en&sa=X&ved=2ahUKEwjD9qbuj__oAhVFbc0KHfD3CFIQ6AEwAHoECAoQAQ#v=onepage&q=flash%20memory%20region%20ti%20bsl%20sector&f=false
+
+
+BSL ram mem overwrite when called from main:::
+1. http://www.ti.com/lit/ug/slau622i/slau622i.pdf pg5
+NOTE: There is somehing called bootcode.This calls BSL when 0x0-0x100 is all FF (EMPTY)
+      Another way is SW or HW invocation.
+      On power ON I think bootcode execs first -> Checks if main flash empty( when 0x0-0x100 is all FF)
+      If YES calls BSL, else run application.
+      I think at the same point it also puts some data in its RAM space.
+      If application is run,this should be getting tampered.
+      That is why SW invocation should be first code in main after disabling watchdog.
+
+Read: http://e2e.ti.com/support/microcontrollers/msp430/f/166/t/551970?MSP432P401R-Rev-C-How-to-invoke-the-entry-sequence-of-MSP-FET
+      Bootcode starts in reset.
+	
+      Boot order : http://www.ti.com/lit/ug/slau622i/slau622i.pdf?ts=1587775445759 - pg8
+
+For FLASH memory related operations.See sample codes from TI resources.Check under Driverlib
+Cannot directly write to flash.Banks-> Sectors are protected after reset.
+
+
+Wrong and right password:::
+1. Compares the supplied pass with first 256 bytes.If same then proceed and do memory erase command.
+After mem erase first 256 bytes will be all FF.(This pattern you can see in the default password.)
+Now default pass becomes correct pass and so proceeds.
+This is a technique when we don't know the start 256 bytes.

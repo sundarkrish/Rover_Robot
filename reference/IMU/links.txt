@@ -1,0 +1,62 @@
+working on branch git:::
+1. https://www.freecodecamp.org/forum/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222
+2. https://www.atlassian.com/git/tutorials/merging-vs-rebasing - should commit and push after merge master into branch
+3. https://githowto.com/merging_back_to_master
+
+
+interpreting accel data:::
+1. https://stackoverflow.com/questions/5871429/accelerometer-data-how-to-interpret
+
+basic accel and gyro tutorial:::
+1. https://www.instructables.com/id/Accelerometer-Gyro-Tutorial/
+
+accel to g values:::
+1. https://ozzmaker.com/accelerometer-to-g/  (use this webiste for IMU related readings)
+
+FXOS8700 status register usage:::
+1. https://github.com/profezzorn/ProffieOS/blob/master/motion/fxos8700.h
+
+FXOS8700 temperature calculation:::
+1. https://www.mathworks.com/help/supportpkg/freescalefrdmk64fboard/examples/read-temperature-from-an-i2c-based-sensor.html
+
+zero offsets in gyro:::
+1. https://learn.adafruit.com/comparing-gyroscope-datasheets	 (how to look datasheet)
+2. https://www.digikey.com/en/articles/a-designers-guide-to-mems-sensors 
+
+Gyro finding angles by integrating:::
+1. https://www.pieter-jan.com/node/7 (also does offset subtraction)
+2. https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/
+
+Magnetometer calculating heading:::
+1. https://ozzmaker.com/compass2/
+2. https://www.electronicwings.com/sensors-modules/hmc5883l-magnetometer-module (talks about declining angle)
+
+
+IMU data samples +  python lib implementation:::
+1. https://github.com/MomsFriendlyRobotCompany/nxp_imu
+
+
+uT to Milligauss converter:::
+1. https://www.convert-measurement-units.com/conversion-calculator.php?type=magnetic-field
+
+Mavlink reference:::
+1. https://github.com/BenbenIO/simple-Mavlink-C-rover
+
+crc related:::
+1. https://www.slideshare.net/DeepakFloria/crc-error-coding-technique
+2. https://www.geeksforgeeks.org/modulo-2-binary-division/
+3. https://en.wikipedia.org/wiki/Cyclic_redundancy_check
+4. https://stackoverflow.com/questions/45191493/how-to-calculate-crc-for-byte-array
+5. http://docs.ros.org/jade/api/mavlink/html/include__v1_80_2checksum_8h_source.html
+6. http://eastbay-rc.blogspot.com/2013/04/mavlink-protocol-notes-packet-decoding.html
+
+mavlink git library(has v1 and v2):::
+1. https://github.com/mavlink/c_library_v1
+
+Connecting mavlink to qcg :::
+(See line 75 of qcg git code for qcg soecific sys id and comp id settings.)
+1. https://mavlink.io/en/services/heartbeat.html
+2. https://github.com/mavlink/qgroundcontrol/blob/master/src/Vehicle/MultiVehicleManager.cc -code
+
+command long:::
+1. https://arxiv.org/pdf/1906.10641.pdf
